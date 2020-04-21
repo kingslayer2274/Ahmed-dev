@@ -1,0 +1,337 @@
+@import "./_variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
+$pink: #f85651;
+$blue: #414a6b;
+.margin-right {
+  margin-right: -81rem;
+}
+
+@mixin view-link {
+  text-decoration: underline;
+  margin-left: 4rem;
+  font-weight: bold;
+  font-family: "Libre Baskerville", serif;
+  display: inline-block;
+  color: $pink;
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    color: black;
+    text-decoration: wavy;
+    transform: scale(1.1);
+    box-shadow: 0 -10px 0 0 $pink inset;
+  }
+}
+
+body {
+  font-family: "Quicksand";
+  outline: 2rem solid white;
+
+  .page {
+    overflow-x: hidden;
+    height: 120vh;
+
+    .he {
+      padding-top: 9rem;
+      letter-spacing: 2rem;
+      top: 0.5%;
+      left: 40%;
+    }
+    .llo {
+      margin-top: -5rem;
+      padding-bottom: 4rem;
+      top: 59%;
+      left: 40%;
+    }
+    .he,
+    .llo {
+      position: fixed;
+
+      color: black;
+      font-size: 10rem;
+      font-weight: 900;
+      transition: all 1s ease-in-out;
+    }
+  }
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    bottom: -12rem;
+    left: 0;
+    background-color: $pink;
+    transition: all 1s ease-in-out;
+    .title {
+      padding: 19rem 6rem 3rem;
+      font-size: 2rem;
+      color: white;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      font-weight: bold;
+    }
+  }
+  #pic {
+    background-image: linear-gradient(to right, rgba(#a5423e, 0.4), rgba($pink, 0.4)), url("../images/laptop.jpg");
+    height: 100vh;
+    background-size: cover;
+    .title {
+      padding: 17rem 5rem 3rem;
+      font-size: 2rem;
+      color: white;
+      font-weight: bold;
+    }
+  }
+
+  #dev {
+    overflow-x: hidden !important;
+    .title {
+      font-size: 5rem;
+      font-weight: 900;
+      padding: 8rem 4rem 2rem;
+      text-transform: uppercase;
+
+      color: $pink;
+      .loper {
+        margin-top: -3rem;
+        margin-left: 1rem;
+      }
+    }
+    .overview {
+      font-size: 2rem;
+      font-weight: bold;
+      color: black;
+      padding-left: 4rem;
+      margin-top: -4rem;
+      span {
+        font-family: "Libre Baskerville", serif;
+        font-weight: 900;
+      }
+    }
+    .sub {
+      padding-left: 4rem;
+      font-size: 1.4rem;
+      margin-top: 5rem;
+    }
+    a.fer-link {
+      @include view-link;
+    }
+    .fervor {
+      img {
+        box-shadow: -2px -3px 15px $pink;
+        transition: all 0.5s;
+      }
+      &:hover img {
+        transform: scale(0.9);
+        filter: blur(2px) brightness(80%);
+      }
+      &:hover .overlay {
+        opacity: 1;
+        right: 0;
+        left: 0;
+      }
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 1rem;
+      right: 1rem;
+      opacity: 0;
+      background-image: linear-gradient(to right, rgba($pink, 0.3), rgba($pink, 0.4));
+      transition: all 0.5s;
+      .title {
+        font-size: 1.3rem;
+        text-align: center;
+        color: white;
+      }
+    }
+    .roaytech {
+      padding-top: 12rem;
+      .roay-title {
+        .roay-main {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+        .roay-sub {
+          font-size: 1.5rem;
+          margin-top: 4rem;
+        }
+        a.roay-link {
+          @include view-link;
+          margin-left: 0rem;
+        }
+      }
+      .roay-site {
+        img {
+          box-shadow: -2px -3px 15px $pink;
+          transition: all 0.5s;
+        }
+        &:hover img {
+          transform: scale(0.9);
+          filter: blur(3px) brightness(80%);
+        }
+        &:hover .overlay-roay {
+          opacity: 1;
+          right: 0;
+          left: 0;
+        }
+      }
+      .overlay-roay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 1rem;
+        right: 1rem;
+        opacity: 0;
+        background-image: linear-gradient(to right, rgba($pink, 0.3), rgba($pink, 0.4));
+        transition: all 0.5s;
+        .title {
+          font-size: 1.3rem;
+          text-align: center;
+          color: white;
+        }
+      }
+    }
+    .ideas {
+      margin-top: 7rem;
+      .idea-title {
+        font-size: 7rem;
+        color: $blue;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0rem 7rem -7rem;
+      }
+      .eas {
+        margin-top: -6rem;
+      }
+    }
+    .ideas-bg {
+      background-image: linear-gradient(to right, rgba($pink, 0.3), rgba($pink, 0.4)), url("../images/phone-lap.jpg");
+      background-size: cover;
+      height: 20rem;
+      background-attachment: fixed;
+
+      p {
+        margin: auto;
+        color: white;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+    }
+  }
+  #about-me {
+    padding-top: 8rem;
+    .main {
+      font-size: 2rem;
+      span {
+        font-family: "Libre Baskerville", serif;
+        font-weight: 900;
+      }
+    }
+    .skills {
+      font-family: "Libre Baskerville", serif;
+      font-weight: 900;
+      font-size: 1.2rem;
+    }
+    ul {
+      li {
+        font-size: 0.9rem;
+        font-weight: 900;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+        &:hover {
+          background-color: rgba($blue, 0.4);
+        }
+      }
+    }
+    .cv {
+      .cv-link {
+        @include view-link;
+      }
+    }
+  }
+  footer {
+    .row {
+      margin-top: 8rem;
+    }
+    .repo-title {
+      font-size: 0.9rem;
+      color: $blue;
+      font-weight: bold;
+    }
+    .repo-link {
+      @include view-link();
+      margin-left: 0;
+    }
+    .contact-info {
+      .contact-title {
+        font-size: 0.9rem;
+        color: $blue;
+        font-weight: bold;
+      }
+      .phone a,
+      .email a {
+        @include view-link();
+        margin-left: 0;
+        font-size: 0.8rem;
+      }
+    }
+    .social {
+      .social-title {
+        font-size: 0.9rem;
+        color: $blue;
+        font-weight: bold;
+      }
+      .social-links {
+        svg {
+          color: $pink;
+          margin-right: 2rem;
+          font-size: 1.2rem;
+          transition: all 0.5s;
+          &:hover {
+            transform: rotateY(360deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden !important;
+    .page {
+      overflow-x: hidden !important;
+      .he,
+      .llo {
+        font-size: 6rem;
+      }
+      .he {
+        left: 20% !important;
+      }
+      .llo {
+        left: 11% !important;
+      }
+    }
+    #dev {
+      .title {
+        font-size: 4rem;
+        padding: 8rem 2rem 2rem;
+      }
+      .overview {
+        margin-top: 3rem;
+      }
+      .roay-site {
+        img {
+          margin-top: 3rem;
+        }
+      }
+      .ideas {
+        .idea-title {
+          font-size: 6.5rem;
+          margin: 0rem 2rem -8rem;
+        }
+      }
+    }
+  }
+}
