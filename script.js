@@ -1,19 +1,3 @@
-$(".navTrigger").click(function() {
-  $(this).toggleClass("active");
-  console.log("Clicked menu");
-  $("#mainListDiv").toggleClass("show_list");
-  $("#mainListDiv").fadeIn();
-});
-
-$(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
-    $(".nav").addClass("affix");
-    console.log("OK");
-  } else {
-    $(".nav").removeClass("affix");
-  }
-});
-
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 10,
@@ -21,10 +5,12 @@ $(".owl-carousel").owlCarousel({
   center: true,
   pagination: false,
   animateOut: "fadeOut",
+  autoplay: true,
+  autoplayTimeout: 2000,
   responsive: {
     0: {
       items: 1,
-      nav: true
+      nav: false
     },
     600: {
       items: 1,
@@ -32,7 +18,7 @@ $(".owl-carousel").owlCarousel({
     },
     1000: {
       items: 1,
-      nav: true,
+      nav: false,
       loop: true
     }
   },

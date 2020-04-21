@@ -145,6 +145,109 @@ body {
         color: white;
       }
     }
+    .my-slider {
+      .slider-title {
+        margin: 8rem auto 3rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: $blue;
+      }
+      .owl-carousel {
+        position: relative;
+        .owl-nav {
+          .owl-next,
+          .owl-prev {
+            padding: 4rem 2rem !important;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 3rem;
+            transition: all 0.5s;
+            &:hover {
+              background-color: rgba(255, 255, 255, 1);
+            }
+          }
+          .owl-prev {
+            position: absolute;
+            top: 50%;
+            left: 8%;
+          }
+          .owl-next {
+            position: absolute;
+            top: 50%;
+            right: 8%;
+          }
+        }
+        a {
+          margin: 0 auto -8rem;
+        }
+        .slider- {
+          &1,
+          &2,
+          &3,
+          &4,
+          &5,
+          &6,
+          &7,
+          &8,
+          &9,
+          &10 {
+            height: 35rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-bottom: 4rem;
+            a {
+              @include view-link();
+
+              font-size: 2rem;
+              padding-top: 10rem;
+              // margin: 0 auto -20rem;
+            }
+            .cap-1 {
+              padding-top: 10rem;
+              font-size: 2.2rem;
+              color: white;
+            }
+            .caro-title {
+              font-size: 5rem;
+              font-weight: bold;
+              color: white;
+            }
+            .text-white {
+              font-size: 1.2rem;
+            }
+          }
+        }
+        .slider-1 {
+          background-image: url("../images/theme-2-1.png");
+        }
+        .slider-2 {
+          background-image: url("../images/theme-2-2.png");
+        }
+        .slider-3 {
+          background-image: url("../images/theme-3-1.png");
+        }
+        .slider-4 {
+          background-image: url("../images/theme-3-2.png");
+        }
+        .slider-5 {
+          background-image: url("../images/theme-5-2.png");
+        }
+        .slider-6 {
+          background-image: url("../images/theme-5-1.png");
+        }
+        .slider-7 {
+          background-image: url("../images/theme-2-3.png");
+        }
+        .slider-8 {
+          background-image: url("../images/theme-2-4.png");
+        }
+        .slider-9 {
+          background-image: url("../images/theme-3-3.png");
+        }
+        .slider-10 {
+          background-image: url("../images/theme-7-3.png");
+        }
+      }
+    }
     .roaytech {
       padding-top: 12rem;
       .roay-title {
@@ -330,6 +433,22 @@ body {
         .idea-title {
           font-size: 6.5rem;
           margin: 0rem 2rem -8rem;
+        }
+      }
+      .my-slider {
+        .slider- {
+          &1,
+          &2,
+          &3,
+          &4,
+          &5,
+          &6,
+          &7,
+          &8,
+          &9,
+          &10 {
+            height: 10rem !important;
+          }
         }
       }
     }

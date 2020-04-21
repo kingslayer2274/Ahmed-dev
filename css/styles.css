@@ -110,6 +110,83 @@ body {
         font-size: 1.3rem;
         text-align: center;
         color: white; }
+    body #dev .my-slider .slider-title {
+      margin: 8rem auto 3rem;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #414a6b; }
+    body #dev .my-slider .owl-carousel {
+      position: relative; }
+      body #dev .my-slider .owl-carousel .owl-nav .owl-next,
+      body #dev .my-slider .owl-carousel .owl-nav .owl-prev {
+        padding: 4rem 2rem !important;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 3rem;
+        transition: all 0.5s; }
+        body #dev .my-slider .owl-carousel .owl-nav .owl-next:hover,
+        body #dev .my-slider .owl-carousel .owl-nav .owl-prev:hover {
+          background-color: white; }
+      body #dev .my-slider .owl-carousel .owl-nav .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: 8%; }
+      body #dev .my-slider .owl-carousel .owl-nav .owl-next {
+        position: absolute;
+        top: 50%;
+        right: 8%; }
+      body #dev .my-slider .owl-carousel a {
+        margin: 0 auto -8rem; }
+      body #dev .my-slider .owl-carousel .slider-1, body #dev .my-slider .owl-carousel .slider-2, body #dev .my-slider .owl-carousel .slider-3, body #dev .my-slider .owl-carousel .slider-4, body #dev .my-slider .owl-carousel .slider-5, body #dev .my-slider .owl-carousel .slider-6, body #dev .my-slider .owl-carousel .slider-7, body #dev .my-slider .owl-carousel .slider-8, body #dev .my-slider .owl-carousel .slider-9, body #dev .my-slider .owl-carousel .slider-10 {
+        height: 35rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 4rem; }
+        body #dev .my-slider .owl-carousel .slider-1 a, body #dev .my-slider .owl-carousel .slider-2 a, body #dev .my-slider .owl-carousel .slider-3 a, body #dev .my-slider .owl-carousel .slider-4 a, body #dev .my-slider .owl-carousel .slider-5 a, body #dev .my-slider .owl-carousel .slider-6 a, body #dev .my-slider .owl-carousel .slider-7 a, body #dev .my-slider .owl-carousel .slider-8 a, body #dev .my-slider .owl-carousel .slider-9 a, body #dev .my-slider .owl-carousel .slider-10 a {
+          text-decoration: underline;
+          margin-left: 4rem;
+          font-weight: bold;
+          font-family: "Libre Baskerville", serif;
+          display: inline-block;
+          color: #f85651;
+          transition: all 0.5s;
+          cursor: pointer;
+          font-size: 2rem;
+          padding-top: 10rem; }
+          body #dev .my-slider .owl-carousel .slider-1 a:hover, body #dev .my-slider .owl-carousel .slider-2 a:hover, body #dev .my-slider .owl-carousel .slider-3 a:hover, body #dev .my-slider .owl-carousel .slider-4 a:hover, body #dev .my-slider .owl-carousel .slider-5 a:hover, body #dev .my-slider .owl-carousel .slider-6 a:hover, body #dev .my-slider .owl-carousel .slider-7 a:hover, body #dev .my-slider .owl-carousel .slider-8 a:hover, body #dev .my-slider .owl-carousel .slider-9 a:hover, body #dev .my-slider .owl-carousel .slider-10 a:hover {
+            color: black;
+            text-decoration: wavy;
+            transform: scale(1.1);
+            box-shadow: 0 -10px 0 0 #f85651 inset; }
+        body #dev .my-slider .owl-carousel .slider-1 .cap-1, body #dev .my-slider .owl-carousel .slider-2 .cap-1, body #dev .my-slider .owl-carousel .slider-3 .cap-1, body #dev .my-slider .owl-carousel .slider-4 .cap-1, body #dev .my-slider .owl-carousel .slider-5 .cap-1, body #dev .my-slider .owl-carousel .slider-6 .cap-1, body #dev .my-slider .owl-carousel .slider-7 .cap-1, body #dev .my-slider .owl-carousel .slider-8 .cap-1, body #dev .my-slider .owl-carousel .slider-9 .cap-1, body #dev .my-slider .owl-carousel .slider-10 .cap-1 {
+          padding-top: 10rem;
+          font-size: 2.2rem;
+          color: white; }
+        body #dev .my-slider .owl-carousel .slider-1 .caro-title, body #dev .my-slider .owl-carousel .slider-2 .caro-title, body #dev .my-slider .owl-carousel .slider-3 .caro-title, body #dev .my-slider .owl-carousel .slider-4 .caro-title, body #dev .my-slider .owl-carousel .slider-5 .caro-title, body #dev .my-slider .owl-carousel .slider-6 .caro-title, body #dev .my-slider .owl-carousel .slider-7 .caro-title, body #dev .my-slider .owl-carousel .slider-8 .caro-title, body #dev .my-slider .owl-carousel .slider-9 .caro-title, body #dev .my-slider .owl-carousel .slider-10 .caro-title {
+          font-size: 5rem;
+          font-weight: bold;
+          color: white; }
+        body #dev .my-slider .owl-carousel .slider-1 .text-white, body #dev .my-slider .owl-carousel .slider-2 .text-white, body #dev .my-slider .owl-carousel .slider-3 .text-white, body #dev .my-slider .owl-carousel .slider-4 .text-white, body #dev .my-slider .owl-carousel .slider-5 .text-white, body #dev .my-slider .owl-carousel .slider-6 .text-white, body #dev .my-slider .owl-carousel .slider-7 .text-white, body #dev .my-slider .owl-carousel .slider-8 .text-white, body #dev .my-slider .owl-carousel .slider-9 .text-white, body #dev .my-slider .owl-carousel .slider-10 .text-white {
+          font-size: 1.2rem; }
+      body #dev .my-slider .owl-carousel .slider-1 {
+        background-image: url("../images/theme-2-1.png"); }
+      body #dev .my-slider .owl-carousel .slider-2 {
+        background-image: url("../images/theme-2-2.png"); }
+      body #dev .my-slider .owl-carousel .slider-3 {
+        background-image: url("../images/theme-3-1.png"); }
+      body #dev .my-slider .owl-carousel .slider-4 {
+        background-image: url("../images/theme-3-2.png"); }
+      body #dev .my-slider .owl-carousel .slider-5 {
+        background-image: url("../images/theme-5-2.png"); }
+      body #dev .my-slider .owl-carousel .slider-6 {
+        background-image: url("../images/theme-5-1.png"); }
+      body #dev .my-slider .owl-carousel .slider-7 {
+        background-image: url("../images/theme-2-3.png"); }
+      body #dev .my-slider .owl-carousel .slider-8 {
+        background-image: url("../images/theme-2-4.png"); }
+      body #dev .my-slider .owl-carousel .slider-9 {
+        background-image: url("../images/theme-3-3.png"); }
+      body #dev .my-slider .owl-carousel .slider-10 {
+        background-image: url("../images/theme-7-3.png"); }
     body #dev .roaytech {
       padding-top: 12rem; }
       body #dev .roaytech .roay-title .roay-main {
@@ -284,4 +361,6 @@ body {
       margin-top: 3rem; }
     body #dev .ideas .idea-title {
       font-size: 6.5rem;
-      margin: 0rem 2rem -8rem; } }
+      margin: 0rem 2rem -8rem; }
+    body #dev .my-slider .slider-1, body #dev .my-slider .slider-2, body #dev .my-slider .slider-3, body #dev .my-slider .slider-4, body #dev .my-slider .slider-5, body #dev .my-slider .slider-6, body #dev .my-slider .slider-7, body #dev .my-slider .slider-8, body #dev .my-slider .slider-9, body #dev .my-slider .slider-10 {
+      height: 10rem !important; } }
